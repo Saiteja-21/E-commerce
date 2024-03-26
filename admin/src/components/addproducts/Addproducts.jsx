@@ -31,7 +31,7 @@ const Addproducts = () => {
 
 
  const handleAdd=async()=>{
-    const response1=await fetch('http://localhost:8000/upload',{
+    const response1=await fetch('https://e-commerce-2-4hp7.onrender.com/upload',{
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -41,7 +41,7 @@ const Addproducts = () => {
 
     const url= await response1.json()
     details.image=url.image_url; 
-    const response2=await fetch('http://localhost:8000/product/save',{
+    const response2=await fetch('https://e-commerce-2-4hp7.onrender.com/product/save',{
         method:"POST",
         headers:{
             Accept:"application/json",

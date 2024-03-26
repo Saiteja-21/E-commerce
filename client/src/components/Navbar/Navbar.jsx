@@ -20,10 +20,13 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
+      <Link to={'/'} style={{textDecoration:'none'}}>
       <div className="logo">
         <img src={logo} />
         <p>Fashion Wear</p>
       </div>
+      </Link>
+      
       <div className="category">
         <ul>
           <li onClick={() => setcategory("shop")}>

@@ -4,14 +4,14 @@ import './Listproducts.css'
 const Listproducts = () => {
   const [products, setproducts] = useState([]);
   const getproducts = async () => {
-    const response = await fetch("http://localhost:8000/product/getall");
+    const response = await fetch("https://e-commerce-2-4hp7.onrender.com/product/getall");
     const data = await response.json();
     console.log(data.products);
     setproducts(data.products);
   };
 
   const handleclick=async(id)=>{
-    const response = await fetch("http://localhost:8000/product/remove",{
+    const response = await fetch("https://e-commerce-2-4hp7.onrender.com/product/remove",{
       method:"POST",
       headers:{
         Accept:"application/json",

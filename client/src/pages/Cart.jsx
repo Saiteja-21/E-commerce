@@ -1,10 +1,12 @@
 import React, { useContext } from 'react'
 import { ShopContext } from '../context/Storecontext'
 import './Cart.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash} from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom'
 
 const Cart = () => {
-  const {products,items}=useContext(ShopContext)
+  const {products,items,removeFromcart}=useContext(ShopContext)
   console.log(products)
   let totalCost = 0;
   if(items==null){
@@ -38,6 +40,9 @@ const Cart = () => {
         <th>
           price
         </th>
+        <th>
+          Remove
+        </th>
       </tr>
 
 
@@ -65,6 +70,10 @@ const Cart = () => {
             <p className='row'>
             $ {product.price * items[product._id]}
             </p>
+           
+          </td>
+          <td>
+          <FontAwesomeIcon icon={faTrash}  onClick={()=>removeFromcart(product._id)}/>
            
           </td>
 

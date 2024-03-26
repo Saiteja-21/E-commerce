@@ -3,7 +3,7 @@ import { ShopContext } from "../context/Storecontext";
 import { useLocation } from "react-router-dom";
 import Item from "./Item.jsx";
 import './Items.css'
-// import products from '../components/products.js'
+
 
 const Category = (props) => {
   const { products} = useContext(ShopContext);
@@ -14,12 +14,16 @@ const Category = (props) => {
   }
 
   return (
-    <div className="items">
+    <>
+    <h1 style={{marginLeft:'700px'}}>{props.category} wear</h1>
+     <div className="items">
       {products.map((item) => (
         item.category===props.category? <Item data={item} />:<></>
        
       ))}
     </div>
+    </>
+   
   );
 };
 

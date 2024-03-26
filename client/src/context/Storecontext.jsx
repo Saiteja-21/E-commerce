@@ -13,14 +13,14 @@ const StorecontextProvider = (props) => {
 
 
   const getdata=async()=>{
-    const response=await fetch('http://localhost:8000/product/getall')
+    const response=await fetch('https://e-commerce-2-4hp7.onrender.com/product/getall')
     const data=await response.json();
     setproducts(data.products);
     
   }
 
   const getCart=async()=>{
-    const response=await fetch('http://localhost:8000/cart/getall',{
+    const response=await fetch('https://e-commerce-2-4hp7.onrender.com/cart/getall',{
       method:'POST',
       headers:{
         Accept:'application/form-data',
@@ -52,7 +52,7 @@ const StorecontextProvider = (props) => {
     setItems((prev) => ({ ...prev, [id]: prev[id] + 1 }));
    
     if(localStorage.getItem('token')){
-      const response=await fetch('http://localhost:8000/cart/add',{
+      const response=await fetch('https://e-commerce-2-4hp7.onrender.com/cart/add',{
         method:'POST',
         headers:{
           Accept:'application/form-data',
@@ -72,7 +72,7 @@ const StorecontextProvider = (props) => {
   const removeFromcart = async(id) => {
     setItems((prev) => ({ ...prev, [id]: prev[id] - 1 }));
     if(localStorage.getItem('token')){
-      const response=await fetch('http://localhost:8000/cart/remove',{
+      const response=await fetch('https://e-commerce-2-4hp7.onrender.com/cart/remove',{
         method:'POST',
         headers:{
           Accept:'application/form-data',

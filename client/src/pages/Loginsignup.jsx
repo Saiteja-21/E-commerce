@@ -16,7 +16,7 @@ const Loginsignup = () => {
   }
 
   const login=async()=>{ 
-    const response=await fetch('http://localhost:8000/user/login',{
+    const response=await fetch('https://e-commerce-2-4hp7.onrender.com/user/login',{
         method:"POST",
         headers:{
             Accept:"application/form-data",
@@ -38,7 +38,7 @@ const Loginsignup = () => {
 
   }
   const signup=async()=>{
-    const response=await fetch('http://localhost:8000/user/signup',{
+    const response=await fetch('https://e-commerce-2-4hp7.onrender.com/user/signup',{
         method:"POST",
         headers:{
             Accept:"application/form-data",
