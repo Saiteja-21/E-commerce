@@ -1,0 +1,45 @@
+.loginsignup{
+    display: flex;
+    justify-content: center;
+    
+    background-color:rgba(250,227,253);
+    height:100vh
+}
+.container{
+     margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 1px 3px -2px black;
+    width: 410px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+}
+.fields{
+    display: flex;
+    flex-direction: column; 
+    width: 80%;
+    gap:18px;
+    align-items: center;
+
+}
+.fields input{
+    width: 96%;
+    height: 41px;
+    outline: none;
+    border:none;
+    box-shadow: 0 1px 3px -2px black;
+}
+button{
+    width:80%;
+    height: 41px;
+    margin-top: 10px;
+    background-color: rgba(234,62,54);
+    color: white;
+    border:none
+
+}
+span{
+    color: red;
+}

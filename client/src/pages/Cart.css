@@ -1,0 +1,45 @@
+.table{
+    width: 60%;
+    border-collapse: collapse;
+    margin-left: 230px;
+    margin-top: 38px;
+}
+.table th, .table td{
+    padding:8px;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+.table tr td{
+    margin-left: 160px;
+}
+.table td img{
+    height: 60px;
+    width: 48px;
+    
+}
+
+.cost{
+    margin-left: 520px;
+    margin-top: 100px;
+}
+.cost p{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+    width: 380px;
+
+}
+.cost p span{
+    margin-left: 180px;
+}
+.cost .bill{
+    margin-left: 10px;
+}
+.cost button{
+    width:160px;
+    height: 41px;
+    background-color: rgba(234,62,54);
+    color: white;
+    border:none;
+    margin-left: 10px;
+
+}
