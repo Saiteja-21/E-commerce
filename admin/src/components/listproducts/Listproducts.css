@@ -1,0 +1,41 @@
+.items{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    grid-gap: 30px;
+    margin-top: 3%;
+    margin-left: 5%;
+    
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* box-shadow: 0 1px 3px -2px black; */
+    /* padding: 2%; */
+    width: fit-content;
+    margin-bottom: 20px
+}
+
+img .img{
+    border: 1px solid black;
+    width: fit-content;
+}
+img{
+    height: 280px;
+    width: 220px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button button{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 180px;
+    border-radius: 10px;
+    
+}

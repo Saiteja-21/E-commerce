@@ -1,0 +1,20 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px #000;
+    height: 60px;
+    
+}
+.navbar img{
+    height: 60px;
+    width: 36px;
+}
+.navbar p{
+    font-size: 30px;
+}
+.navbar .logo{
+    display: flex;
+    align-items: center;
+}
