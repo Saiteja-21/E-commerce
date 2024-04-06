@@ -5,6 +5,7 @@
     /* grid-gap: 30px; */
     margin-top: 3%;
     margin-left: 5%;
+
     
 }
 .item{
@@ -18,10 +19,6 @@
     margin-bottom: 20px
 }
 
-img .img{
-    border: 1px solid black;
-    width: fit-content;
-}
 img{
     height: 280px;
     width: 220px;
@@ -37,4 +34,22 @@ img{
     width: 180px;
     border-radius: 10px;
     
+}
+
+@media (max-width:380px){
+    .items{
+        
+        grid-template-columns: repeat(2,1fr);
+        /* justify-content: center; */
+
+        
+    }
+    img{
+        width: 100px;
+    }
+    .button button{
+        width: 150px;
+        
+    }
+
 }

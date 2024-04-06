@@ -15,7 +15,6 @@ const Category = (props) => {
 
   return (
     <>
-    <h1 style={{marginLeft:'700px'}}>{props.category} wear</h1>
      <div className="items">
       {products.map((item) => (
         item.category===props.category? <Item data={item} />:<></>

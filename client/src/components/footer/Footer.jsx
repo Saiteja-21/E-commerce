@@ -7,19 +7,23 @@ import './Footer.css'
 const Footer = () => {
   return (
     <div className='footer'>
-        <div className='logo'>
+        <div className='footerlogo'>
             <img src={logo}/>
             <p>Fashion wear</p>
 
         </div> 
-        <ul className='links'>
+        <div className='links'>
+       
          
-            <li>Company</li>
-            <li>Products</li>
-            <li>Offices</li>
-            <li>About</li>
-            <li>Contact</li>
-         </ul>
+         <p>Company</p>
+         <p>Products</p>
+       
+         <p>About</p>
+         <p>Contact</p>
+     
+
+        </div>
+       
             
          
          <div className='socialmedia_icons'>

@@ -10,6 +10,7 @@ export const ShopContext = createContext(null);
 const StorecontextProvider = (props) => {
   const [items, setItems] = useState();
   const [products,setproducts]=useState([])
+  const [allcollections,setallcollections]=useState(true)
 
 
   const getdata=async()=>{
@@ -88,7 +89,7 @@ const StorecontextProvider = (props) => {
     }
   };
 
-  const contextValue = { products, addTocart, removeFromcart, items };
+  const contextValue = { products, addTocart, removeFromcart, items,allcollections,setallcollections };
   return (
     <ShopContext.Provider value={contextValue}>
       {props.children}

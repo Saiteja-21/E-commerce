@@ -27,11 +27,11 @@ const Cart = () => {
 
 
   return (
-    <div>
+    <div className='usercart'>
      <table className='table'>
     
       <tr>
-        <th>
+        <th className='first'>
           Product
         </th>
         <th>
@@ -51,7 +51,7 @@ const Cart = () => {
       {products.map((product)=>(
         items[product._id]>0&&
         <tr>
-          <td>
+          <td className='first'>
             <p className='row'>
             <img src={product.image}/>
         
@@ -100,10 +100,24 @@ const Cart = () => {
      </table>
 
      <div className='cost'>
-      <p>Cost &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- &nbsp; &nbsp; &nbsp; &nbsp;$ {totalCost} </p>
-      <p>Tax    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- &nbsp; &nbsp; &nbsp; &nbsp;$ 0 </p>
-      <p>Delivery Charges   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- &nbsp; &nbsp; &nbsp; &nbsp;$ 0</p>
-      <p>Total Price  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;- &nbsp; &nbsp; &nbsp; &nbsp;$ {totalCost}</p>
+      <h2>Amount</h2>
+   
+        <div className='tax'>
+          <p>cost</p>
+          <p>-</p>
+          <p>$ {totalCost}</p>
+        </div>
+        <div className='tax'>
+          <p>Tax</p>
+          <p>-</p>
+          <p>$ 0</p>
+        </div>
+        <div className='tax'>
+          <p>Total price</p>
+          <p>-</p>
+          <p>$ {totalCost}</p>
+        </div>
+      
       <div className='bill'>
         <Link to={'/'}>
         <button>Continue shopping</button>

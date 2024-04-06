@@ -1,39 +1,36 @@
+.usercart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .table{
     width: 60%;
     border-collapse: collapse;
-    margin-left: 230px;
-    margin-top: 38px;
+   
 }
 .table th, .table td{
-    padding:8px;
+    padding:1%;
     text-align: left;
+    width: 10%;
     border-bottom: 1px solid black;
 }
-.table tr td{
-    margin-left: 160px;
-}
+
 .table td img{
-    height: 60px;
-    width: 48px;
+    height: 2%;
+    width: 20%;
     
 }
 
-.cost{
-    margin-left: 520px;
-    margin-top: 100px;
-}
-.cost p{
-    font-size: 20px;
-    border-bottom: 1px solid black;
-    width: 380px;
 
+.cost{
+    margin-top: 80px;
+   
 }
-.cost p span{
-    margin-left: 180px;
+
+.cost h2{
+    margin-left: 38%;
 }
-.cost .bill{
-    margin-left: 10px;
-}
+
 .cost button{
     width:160px;
     height: 41px;
@@ -42,4 +39,29 @@
     border:none;
     margin-left: 10px;
 
+} 
+.tax{
+    display: flex;
+    justify-content: space-around;
+
+}
+.tax p{
+    font-size: 20px;
+}
+
+@media (max-width:380px){
+    .table{
+        width: 98%;
+        
+    }
+    .table td img{
+        height: 20%;
+        width: 32%
+        
+    }
+    .table th, .table td{
+        padding-left:3%;
+        width: 18%;
+        
+    }
 }

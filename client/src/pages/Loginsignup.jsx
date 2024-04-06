@@ -73,7 +73,7 @@ const Loginsignup = () => {
           <input type="text" placeholder="password"  name="password" value={details.password} onChange={handlechange}/>
         </div>
       
-        <button onClick={()=>{value==='Login'?login():signup()}}>continue</button>
+        <button className="continue" onClick={()=>{value==='Login'?login():signup()}}>continue</button>
       
       
         {value === "Signup" ? (
